@@ -14,8 +14,7 @@ public class CashcoreApplication extends SpringBootServletInitializer {
         return application.sources(CashcoreApplication.class);
     }
 	
-@Override
-  protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-      return builder.sources(CashcoreApplication.class);
-  }
+public static void main(String[] args) throws Exception {
+        SpringApplication.run(CashcoreApplication.class, args);
+    }
 }
