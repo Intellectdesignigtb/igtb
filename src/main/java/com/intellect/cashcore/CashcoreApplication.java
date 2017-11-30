@@ -8,9 +8,7 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 
 @SpringBootApplication
 public class CashcoreApplication extends SpringBootServletInitializer {
-	<!-- public static void main(String[] args) {
-		SpringApplication.run(CashcoreApplication.class, args);
-	} -->
+	
 @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
         return application.sources(CashcoreApplication.class);
