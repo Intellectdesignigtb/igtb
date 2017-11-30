@@ -12,12 +12,12 @@ import com.intellect.cashcore.dao.CountryDao;
 import com.intellect.cashcore.entities.Country;
 
 @RestController
-public class Hello {
+public class HelloController  {
 	
 	@Autowired
 	private CountryDao countryDao;
 	
-	@RequestMapping("/")
+	@RequestMapping("/hello")
 	public String printSomething(){
 		countryDao.insertCountry(getCountry());
 		return "Working";
